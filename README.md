@@ -47,8 +47,8 @@ project/
 │   ├── routes/
 │   └── ...
 │
-├── database/
-│   └── database.sql
+├── database.sql
+│ 
 │
 ├── .gitignore
 └── README.md
