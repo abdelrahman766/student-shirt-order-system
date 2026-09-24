@@ -167,7 +167,7 @@ The project uses **PostgreSQL**.
 The database backup/schema is included in:
 
 ```text
-database/database.sql
+database.sql
 ```
 
 You can restore the database using pgAdmin.
