@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+    <title>بيانات الطلب</title>
+    <link  rel="stylesheet"  href="css/style.css" >
+</head>
+
+<body>
+<div class="container">
+    <div class="card">
+        <h1>  قائمة الملابس  </h1>
+        <form id="orderForm">
+            <div class="form-grid">
+
+                <!-- Team -->
+                <div class="form-group">
+                    <label for="teamName">  الفريق </label>
+                    <input type="text"  id="teamName"  readonly >
+                </div>
+
+                <!-- Student -->
+                <div class="form-group">
+                    <label for="student">   الاسم الرباعي </label>
+                    <select id="student"  required >
+                        <option value="">  -- اختر الطالب --  </option>
+                    </select>
+                </div>
+
+
+                <!-- Size -->
+                <div class="form-group">
+                    <label for="size">  المقاس </label>
+                    <select  id="size"  required >
+                        <option value="">  -- اختر المقاس -- </option>
+                        <option value="S"> S </option>
+                        <option value="M">  M  </option>
+                        <option value="L">   L </option>
+                        <option value="XL">  XL </option>
+                        <option value="2XL">  2XL</option>
+                    </select>
+                </div>
+
+
+                <!-- Shirt Number -->
+
+                <div class="form-group">
+                    <label for="shirtNumber">  رقم التيشيرت </label>
+
+                    <input type="number" id="shirtNumber"   min="0"
+                        max="999"  required  >
+                </div>
+
+
+                <!-- Receipt -->
+                <div class="form-group">
+                    <label for="receiptNumber"> رقم الإيصال </label>
+                    <input type="text"  id="receiptNumber"  required >
+                </div>
+
+
+                <!-- Height -->
+                <div class="form-group">
+                    <label for="height">  الطول (سم) </label>
+                    <input type="number"  id="height"  min="1"
+                        max="300"  step="0.01" required >
+                    <small> الطول بالسنتيمتر (cm) </small>
+                </div>
+
+
+                <!-- Weight -->
+                <div class="form-group">
+                    <label for="weight"> الوزن (كجم) </label>
+                    <input type="number"  id="weight"  min="1"
+                        max="500"  step="0.01"  required >
+                    <small>  الوزن بالكيلوجرام (kg) </small>
+                </div>
+
+
+                <!-- School -->
+                <div class="form-group">
+                    <label for="school">  المدرسة </label>
+                    <input  type="text"  id="school"  required>
+                </div>
+
+
+                <!-- Academic Year -->
+                <div class="form-group">
+                    <label for="academicYear">  السنة الدراسية </label>
+
+                    <select  id="academicYear"  required>
+                        <option value="">    -- اختر السنة الدراسية -- </option>
+                    </select>
+                </div>
+
+
+                <!-- Address -->
+                <div class="form-group full-width">
+                    <label for="address"> العنوان </label>
+                    <textarea id="address" rows="4"  required ></textarea>
+                </div>
+
+            </div>
+
+            <button type="submit"> submit </button>
+        </form>
+
+        <div id="message" class="message" ></div>
+    </div>
+</div>
+
+<script src="js/order.js"></script>
+</body>
+</html>
